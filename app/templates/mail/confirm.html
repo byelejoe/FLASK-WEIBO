@@ -1,0 +1,9 @@
+<div>
+    <p>To {{ user.username }}:</p>
+
+    <p>确认账户请点击以下链接:</p>
+
+    <p><strong>{{ url_for('auth.confirm', token=token, _external=True) }}</strong></p>
+
+    <p>感谢使用！</p>
+</div>

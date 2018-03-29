@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}COMMENT{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h2>{{ question.body }}</h2>
+    <p>{{ question.desc }}444</p>
+</div>
+<small>{{ question.timestamp.strftime('%Y-%m-%d')}}</small>
+{{ wtf.quick_form(form) }}
+{% for answer in answers %}
+<ul>
+    <li>
+
+        <p>{{ answer.body }}</p>
+        <p><a href="{{ url_for('.user',username=answer.author.username) }}">{{ answer.author.username }}</a> 编辑于 {{ answer.timestamp.strftime('%Y-%m-%d') }}</p>
+    </li>
+</ul>
+{% endfor %}
+{% endblock %}
