@@ -8,7 +8,7 @@
 # screenshots
 ### 首页
 ![预览](https://github.com/byelejoe/FLASK-WEIBO/raw/master/demo1.png)
-## 个人资料
+### 个人资料
 ![预览](https://github.com/byelejoe/FLASK-WEIBO/raw/master/demo2.png)
 ### 评论
 ![预览](https://github.com/byelejoe/FLASK-WEIBO/raw/master/demo3.png)
